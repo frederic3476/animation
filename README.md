@@ -1,4 +1,4 @@
-# A (very) simple starting point to use ES6 & beyond features in the browser today with Webpack and Babel.
+# A Starting point to use ES6 & beyond features in the browser today with Webpack and Babel.
 
 Out of the box includes features up to stage 0, tweak to your needs.
 
@@ -33,3 +33,29 @@ Now run `npm install` to install dependencies. When completed, you can run sever
 Run: `npm run start`
 
 Visit: `http://localhost:8080/webpack-dev-server/`
+
+The `app` folder is where you should make changes to your css and javascript.
+
+## index.js
+
+`index.js` can import "scss" files such as your primary `style.scss` and other javascript libraries such as jquery installed by npm: 
+
+#### jQuery: 
+
+jQuery is already installed, but here's how you would add it:
+
+Run `npm install jquery`
+
+Then in `index.js` add `window.$ = window.jQuery = require('jquery');`
+
+## style.css
+
+`style.css` can import other css files installed by npm: 
+
+#### Animate.css:
+
+Animate.css is already installed, but here's how you would add it:
+
+Run `npm install animate.css`
+
+Then add `@import '~animate.css';` to `style.scss`

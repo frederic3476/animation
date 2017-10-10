@@ -34,7 +34,7 @@ Your terminal should now show the folder name with your username ready to run a 
 
 Run: `npm run start`
 
-Visit: `http://localhost:8080/webpack-dev-ss. erver/`
+Visit: `http://localhost:8080/webpack-dev-server/`
 
 - The `app` folder is where you should make changes to your css and javascript.
 - The `dist` folder is the compiled output that will be overwritten each time you make changes.

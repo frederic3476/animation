@@ -4,9 +4,7 @@ try {
 
     window.$ = window.jQuery = require('jquery');
     window.Vue = require('vue');
-    //window.collect = require('collect.js');
-
-
+    window.collect = require('collect.js');
 
     $(document).ready(function(){
         /** Add Support for Animate.css ES6 Promises & Delay **/

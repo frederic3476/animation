@@ -26,7 +26,7 @@ Your terminal should now show the folder name with your username ready to run a 
 3) Now run `npm install` to install dependencies.  When completed, you can run several commands to initialize webpack:
 
 - `npm start` will start the live-reload dev server.
-- `npm run build` will build the site for development use. By default site are output in the `dist/` folder
+- `npm run build` will build the site for development use.
 - `npm run production` will output a minified build for production use.
 - `npm run clean` will remove the `/dist` folder.
 

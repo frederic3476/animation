@@ -4,18 +4,32 @@ Out of the box includes features up to stage 0, tweak to your needs.
 
 Also supports SASS, just create your `*.scss` file in `/app` and require it, or simply change the sample file provided.
 
+
+## Setup
+
+Install Node.js
+- https://nodejs.org/en/
+
+
 ## Usage
 
-If you don't have webpack installed globally do so by running `npm install webpack -g`. Then run `npm install` to install dependencies.
+If you don't have webpack installed globally do so by opening a terminal and running `npm install webpack -g`. 
+
+Then type `cd` into the terminal and drag this project folder into the terminal and then press enter to switch the current working directory to the project folder.
+
+Your terminal should now show the folder name with your username ready to run a command:
+`myComputerName$:ES6-webpack-starter myUserName$`  (mac example)
+
+
+Now run `npm install` to install dependencies. When completed, you can now run several commands to initialize webpack:
 
 - `npm start` will start the live-reload dev server.
 - `npm run build` will build the site for development use. By default site are output in the `dist/` folder
 - `npm run production` will output a minified build for production use.
 - `npm run clean` will remove the `/dist` folder.
 
-## Github Pages
+## Example
 
-After you've built site site, you can publish it to Github Pages by using a `git subtree push`.  
-Make sure you've committed `dist/` and run `git subtree push --prefix dist origin gh-pages`.  
-If you don't want to use Github Pages add `dist/` to `.gitignore`.
+Run: `npm run start`
 
+Visit: `http://localhost:8080/webpack-dev-server/`

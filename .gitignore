@@ -1,3 +1,15 @@
 node_modules/
 npm-debug.log
 .DS_Store
+
+.idea/ES6-webpack-starter.iml
+
+.idea/misc.xml
+
+.idea/modules.xml
+
+.idea/vcs.xml
+
+.idea/workspace.xml
+
+package-lock.json

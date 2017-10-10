@@ -1,15 +1,15 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+let HtmlWebpackPlugin = require('html-webpack-plugin');
+let ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
+let HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
   filename: 'index.html',
   inject: 'body'
 });
 
-var ExtractTextPluginConfig = new ExtractTextPlugin('style.css');
+let ExtractTextPluginConfig = new ExtractTextPlugin('style.css');
 
-var entrypoint = process.env.npm_lifecycle_event === 'dev' ?
+let entrypoint = process.env.npm_lifecycle_event === 'dev' ?
   'webpack-dev-server/client?http://localhost:8080' :
   './app/index.js';
 
@@ -37,4 +37,4 @@ module.exports = {
     ]
   },
   plugins: [HtmlWebpackPluginConfig, ExtractTextPluginConfig]
-}
+};

@@ -13,15 +13,17 @@ Install Node.js
 
 ## Usage
 
-If you don't have webpack installed globally do so by opening a terminal and running `npm install webpack -g`. 
+1) If you don't have webpack installed globally do so by opening a terminal and running:
 
-Then type `cd` into the terminal and drag this project folder into the terminal and then press enter to switch the current working directory to the project folder.
+`npm install webpack -g`
+
+2) Then type `cd` into the terminal and drag this project folder into the terminal and then press enter to switch the current working directory to the project folder.
 
 Your terminal should now show the folder name with your username ready to run a command:
+
 `myComputerName$:ES6-webpack-starter myUserName$`  (mac example)
 
-
-Now run `npm install` to install dependencies. When completed, you can run several commands to initialize webpack:
+3) Now run `npm install` to install dependencies.  When completed, you can run several commands to initialize webpack:
 
 - `npm start` will start the live-reload dev server.
 - `npm run build` will build the site for development use. By default site are output in the `dist/` folder
@@ -32,9 +34,10 @@ Now run `npm install` to install dependencies. When completed, you can run sever
 
 Run: `npm run start`
 
-Visit: `http://localhost:8080/webpack-dev-server/`
+Visit: `http://localhost:8080/webpack-dev-ss. erver/`
 
 The `app` folder is where you should make changes to your css and javascript.
+The `dist` folder is the compiled output that will be overwritten each time you make changes.
 
 ## index.js
 

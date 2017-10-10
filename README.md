@@ -21,7 +21,7 @@ Your terminal should now show the folder name with your username ready to run a 
 `myComputerName$:ES6-webpack-starter myUserName$`  (mac example)
 
 
-Now run `npm install` to install dependencies. When completed, you can now run several commands to initialize webpack:
+Now run `npm install` to install dependencies. When completed, you can run several commands to initialize webpack:
 
 - `npm start` will start the live-reload dev server.
 - `npm run build` will build the site for development use. By default site are output in the `dist/` folder

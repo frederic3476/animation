@@ -4,15 +4,20 @@ require('./bootstrapper.js');
 
 
 $(document).ready(function(){
+
+
     /** Animate **/
-    $('#logo').animateCss('fadeIn')
+    $('#logo').animateCss('zoomInDown')
     .then(element=> {
         return element.animateCss('flash');
     })
     .then(element=> {
-        return element.animateCss('fadeOut');
+        return element.animateCss('flip');
     })
     .then(element=> {
-        return element.addClass('hidden');
+        return element.animateCss('zoomOutDown');
+    })
+    .then(element=> {
+        return element.animateCss('zoomInDown');
     });
 });

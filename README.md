@@ -36,8 +36,8 @@ Run: `npm run start`
 
 Visit: `http://localhost:8080/webpack-dev-ss. erver/`
 
-The `app` folder is where you should make changes to your css and javascript.
-The `dist` folder is the compiled output that will be overwritten each time you make changes.
+- The `app` folder is where you should make changes to your css and javascript.
+- The `dist` folder is the compiled output that will be overwritten each time you make changes.
 
 ## index.js
 

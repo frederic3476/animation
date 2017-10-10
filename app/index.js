@@ -1,9 +1,8 @@
 'use strict';
-import "./style.scss";
+require('./style.scss');
 require('./bootstrapper.js');
 
-
-$(document).ready(function(){
+$(function() {
 
     /** Animate **/
     $('#logo').animateCss('zoomInDown',0.5)
@@ -19,4 +18,5 @@ $(document).ready(function(){
     .then(element=> {
         return element.animateCss('zoomInDown',0.5,0.1);
     });
+
 });

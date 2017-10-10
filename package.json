@@ -41,6 +41,8 @@
   },
   "dependencies": {
     "animate.css": "^3.5.2",
-    "jquery": "^3.2.1"
+    "collect.js": "^3.0.51",
+    "jquery": "^3.2.1",
+    "vue": "^2.4.4"
   }
 }

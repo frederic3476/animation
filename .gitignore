@@ -13,3 +13,5 @@ npm-debug.log
 .idea/workspace.xml
 
 package-lock.json
+
+.idea/php.xml

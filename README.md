@@ -3,6 +3,13 @@
 Out of the box includes features up to stage 0, tweak to your needs.
 Also supports SASS, just create your `*.scss` file in `/app` and require it, or simply change the sample file provided.
 
+## Included
+
+- jQuery
+- Vue.js
+- Collect.js
+- Animate.css
+
 ## Setup
 
 Install Node.js

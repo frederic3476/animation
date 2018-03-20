@@ -2,6 +2,8 @@
 require('./style.scss');
 require('./bootstrapper.js');
 
+var Rx = require('rxjs/Rx');
+
 $(function() {
 
     /** Animate **/
@@ -20,3 +22,25 @@ $(function() {
     });
 
 });
+
+Rx.Observable.fromEvent(document.querySelector('#input'), 'keyup')
+//.throttleTime(1000)
+.map((event) => event.target.value)
+.subscribe((value) => 
+    {
+        $('#logo').animateCss(value,0.5).then(function(){
+            console.log('animated '+ value);
+        });
+    },
+    (error) => console.log(error)
+    );
+
+    Rx.Observable.fromEvent(document.querySelector('#but'), 'click')
+    .subscribe((event) => 
+        {
+            $('#logo').animateCss('zoomInDown',0.5).then(function(){
+                console.log('test click');
+            });
+        },
+        (error) => console.log(error)
+        );

@@ -11,7 +11,7 @@ let ExtractTextPluginConfig = new ExtractTextPlugin('style.css');
 
 let entrypoint = process.env.npm_lifecycle_event === 'dev' ?
   'webpack-dev-server/client?http://localhost:8080' :
-  './app/index.js';
+  './app/index.ts';
 
 module.exports = {
   entry: entrypoint,
@@ -21,13 +21,18 @@ module.exports = {
   },
   module: {
     loaders: [
+      // {
+      //   test: /\.js$/,
+      //   include: __dirname + '/app',
+      //   loader: 'babel-loader',
+      //   query: {
+      //     presets: ['es2015', 'stage-0']
+      //   }
+      // },
       {
-        test: /\.js$/,
+        test: /\.ts$/,
         include: __dirname + '/app',
-        loader: 'babel-loader',
-        query: {
-          presets: ['es2015', 'stage-0']
-        }
+        loader: 'ts-loader'
       },
       {
         test: /\.scss$/,

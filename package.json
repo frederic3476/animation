@@ -37,14 +37,18 @@
     "node-sass": "^3.8.0",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
+    "ts-loader": "^4.1.0",
     "webpack": "^1.15.0",
     "webpack-dev-server": "^1.15.0"
   },
   "dependencies": {
     "animate.css": "^3.5.2",
     "collect.js": "^3.0.51",
+    "gsap": "^1.20.4",
     "jquery": "^3.2.1",
-    "vue": "^2.4.4",
-    "rxjs": "^5.5.6"
+    "pewjs": "^1.0.3",
+    "rxjs": "^5.5.6",
+    "typescript": "^2.8.1",
+    "vue": "^2.4.4"
   }
 }

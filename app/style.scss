@@ -14,3 +14,11 @@ h1#logo {
 .hidden{
   display: none !important;
 }
+.large{
+  width: 100px;
+  height: 1000px;
+  background-color: green;
+  position: relative;
+  margin-top: 600px;
+  opacity: 0;
+}

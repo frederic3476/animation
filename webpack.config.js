@@ -1,5 +1,6 @@
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 let ExtractTextPlugin = require('extract-text-webpack-plugin');
+let CopyWebpackPlugin = require('copy-webpack-plugin');
 
 let HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
@@ -21,6 +22,7 @@ module.exports = {
   },
   module: {
     loaders: [
+      { test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/, loader: "file" },
       {
         test: /\.js$/,
         include: __dirname + '/app',
@@ -36,5 +38,11 @@ module.exports = {
       }
     ]
   },
-  plugins: [HtmlWebpackPluginConfig, ExtractTextPluginConfig]
+  plugins: [
+    HtmlWebpackPluginConfig, 
+    ExtractTextPluginConfig,
+    new CopyWebpackPlugin([
+      {from:'app/images',to:'images'} 
+    ]), 
+  ]
 };
